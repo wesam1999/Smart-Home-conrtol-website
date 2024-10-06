@@ -1,0 +1,265 @@
+
+
+/* main php page css */
+.main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 16px)
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: calc(calc(100vh /2) - 16px);
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+.alertEntranceHall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: calc(100vh - 16px);
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+.NewsEntranceHall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: calc(100vh - 16px);
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+.alert h1{  
+    margin-top:unset ;
+    margin-bottom: unset;
+}
+
+.ListAlerts{
+    display: flex;
+    flex-direction: column ;
+    height: calc(calc(100vh /2) - 46px) ;
+    max-height: 400px; 
+    overflow-y: scroll;
+    overflow-x: none;
+    scrollbar-width: none;
+    margin: 8px 8px;
+    width: calc(100% - 16px);
+}
+
+.Listdevice{
+    display: flex;
+    flex-direction: column ;
+    width:calc( 100% - 46px);
+    height: calc(calc(100vh /2) - 46px) ;
+    min-height: 400px; 
+    overflow-y: scroll;
+    overflow-x: none;
+    scrollbar-width: none;
+}
+
+.notfication{
+    display: flex;
+    flex-direction: row !important;
+    width:calc( 100% - 16px);   
+    box-sizing: border-box;
+    flex-grow: 0.3;
+    width: 100%;
+    box-sizing: border-box;
+    height: 1vh;
+    align-items: center;
+    margin: unset;
+    pointer-events: auto; 
+}
+.eye{
+    display: inline;
+}
+
+.notfication i{
+    margin: 10px 10px;
+    border: 2px black;  
+}
+.notfication img{
+    margin-right: 8px;
+   width: 40px;
+   height: 40px;
+}
+.unRead{
+    background: #eeee9761;
+} 
+.requestNotification{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+}
+.requestNotification p{
+    margin: unset;
+    padding: unset;
+    text-overflow: ellipsis;
+}
+.requestNotification h6{
+    margin: unset;
+    padding: unset;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+}
+
+/* controler */
+#imageAC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    min-height: 70px;
+    margin: 20px 20px; 
+    width: 100%;
+}
+
+
+.imagenotfprofile{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* for news in inside main page css */
+.Time-Name{
+    display: flex;
+    flex-direction: row;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: calc(calc(100vh /2) - 16px);
+    border-radius: 24px;
+}
+.news h1{
+    margin: unset;
+}
+.listNews{
+    display: flex;
+    flex-direction: column ;
+    width:calc( 100% - 16px);
+    height: calc(calc(100vh /2) - 46px) ;
+    max-height: 400px; 
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.cardNews {
+    display: flex;
+    flex-direction: row ;
+    width:calc( 100% - 16px);   
+    /* border: 2px solid black; */
+    padding: 10px 0px;
+    padding-left: 5PX;
+    height: auto;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.cardNews img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+ 
+}
+
+.controler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    margin: 8px 8px;
+    max-height: 100%;
+}
+
+.controlerAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    margin: 8px 8px;
+    max-height: 100%;
+}
+
+.controler .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 37px);
+    height: 100%;
+    min-height:  10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.controler h1{
+    margin: unset;
+}
+
+.card {
+    display: flex;
+    border-radius: 16px;
+    max-height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% ;
+}   
+
+.controler .cardGraphicalRepresentation {
+    display: flex;
+    border-radius: 16px;
+    margin: 8px;
+    min-height: 160px;
+    height: calc(100% - 8px);
+    box-sizing: border-box;
+    padding: 8px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.controler .cardFamily {
+    display: flex;
+    background-color: indianred;
+    border-radius: 16px;
+    margin: 8px;
+    min-height: 160px;
+    box-sizing: border-box;
+    padding: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.container .cardlibrary {
+    display: flex;
+    background-color: indianred;
+    border-radius: 16px;
+    margin: 8px;
+    min-height: 100px;
+    box-sizing: border-box;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 8px;
+    height: calc(100% - 16);
+}

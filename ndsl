@@ -1,0 +1,36 @@
+   <div class="controler col-10 col-mob-12">
+      <h1>Control</h1>
+      <div class="container">
+      <?php
+
+include_once "../Database/device.php";
+include_once "../Database/DAL_device.php";
+include_once "../Database/Database.php";
+$database = new Database();
+$DAL_device = new DAL_device();
+$db = $database->getConnection();
+$listdevices = $DAL_device->read($db);
+$numberDevice = 0;
+while ($device = $listdevices->fetch_assoc()) {
+    $numberDevice++;
+    if ($numberDevice == 5) break;
+    echo '
+    <div class="card col-6">
+   <div class="deviceMain">
+<img src="cctv.png" id="imageDevice" class="imageDevice">
+<h1>' . htmlspecialchars($device['diviceName']) . '</h1>
+<h1>' . htmlspecialchars($device['type']) . '</h1>
+<p>' . htmlspecialchars($device['controlDeviceId']) . ' </p>
+<p>' . htmlspecialchars($device['maker']) . '</p>
+<p>' . htmlspecialchars($device['locationInHouse']) . '</p>
+<i class="fa fa-trash-o" aria-hidden="true" onclick="deleteDevice(' . $device['id'] . ')"></i>
+<div>
+</div>
+    ';
+}
+
+?>
+<div class="card col-6">
+  <img src="ask-for-help.png" id="imageAC">
+</div>
+<a onclick="changeContent('FamilyRoom')" style="color:blue ; display:flex;align-items: center;justify-content: center;">See More</a>

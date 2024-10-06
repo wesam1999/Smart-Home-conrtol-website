@@ -1,0 +1,178 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    height: 100vw;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgb(235, 225, 213);
+    display: flex;
+    flex-direction: row;
+}
+
+.shown {
+    display: flex;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#backdrop{
+    display: none;
+}
+.cardNews h3,p,h6{
+    margin: unset;
+}
+/* colum width  */
+.col-1 {
+    width: calc(calc(calc(100% / 12) * 1) - 16px);
+}
+
+.col-2 {
+    width: calc(calc(calc(100% / 12) * 2) - 16px);
+}
+
+.col-3 {
+    width: calc(calc(calc(100% / 12) * 3) - 16px);
+}
+
+.col-4 {
+    width: calc(calc(calc(100% / 12) * 4) - 16px);
+}
+.col-5 {
+    width: calc(calc(calc(100% / 12) * 5) - 16px);
+}
+.col-6 {
+    width: calc(calc(calc(100% / 12) * 6) - 16px);
+}
+.col-7 {
+    width: calc(calc(calc(100% / 12) * 7) - 16px);
+}
+.col-8 {
+    width: calc(calc(calc(100% / 12) * 8) - 16px);
+}
+.col-9 {
+    width: calc(calc(calc(100% / 12) * 9) - 16px);
+}
+.col-10 {
+    width: calc(calc(calc(100% / 12) * 10) - 16px);
+}
+
+.col-11 {
+    width: calc(calc(calc(100% / 12) * 11) - 16px);
+}
+.col-12 {
+    width: 100%;
+}
+
+.offset-col-6 {
+    width: calc(calc(calc(100% / 12) * 6) - 16px);
+}
+
+
+/* for MObile side bar in the dashboard */
+
+.mob-side-bar {
+    display: none !important;
+
+}
+
+.mob-side-bar .sideBarToggle {
+    display: none !important;
+
+}
+.title {
+    display: none;
+}
+
+/* light box ajax for alert */
+
+
+.box{
+    flex-direction: row;
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto ;
+    margin-top: 150px;                                  
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.box img{ 
+    width:calc( 100%  / 2 );
+    height: 100%;
+}
+.databox{
+    display: flex;
+    flex-direction: column !important;
+    height:100% ;
+    background-color:rgb(235, 225, 213);
+    max-width: 50%;
+     overflow-x: hidden;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      overflow-wrap: break-word;
+      font-style: oblique;
+}
+.controlerAlertAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    margin: 8px 8px;
+    width: calc(calc(calc(100% / 12) * 10) - 166px);
+}
+.databoxAlertAll{
+    display: flex;
+    flex-direction: column !important;
+    height:100% ;
+    background-color:white;
+    width: calc(calc(calc(100% / 12) * 10) - 166px);
+          font-style: oblique;
+    
+
+}
+.databoxAlertAll h1 {
+    width: calc(calc(calc(100% / 12) * 10) - 166px);
+    text-overflow: ellipsis;
+}
+
+.databox h1{
+    margin-left: 10px;
+    
+}
+.actionButton {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.actionButton input{
+    font-size: 20px;
+    border: unset;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 10px 10px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+.cardNews h3, p, h6 {
+    margin: 10px 10px;
+}
+.device h1,p{
+    margin: 8px 8px;
+}

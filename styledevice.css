@@ -1,0 +1,230 @@
+.dropbtn {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+.addDevice{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    height: 100vh;
+    width:calc( calc(100vw /2) - 76px);
+    align-items: center; 
+
+ 
+}
+
+
+.deviceMain{
+  
+  max-height: 50px;
+  width: calc(100% /2);
+}
+
+.device{
+  display: flex;
+  flex-direction: row;
+  height: 10Vh;
+  width: calc(100% - 76px);
+  margin: 10px 10px;
+  align-items: center;
+  justify-content:space-between;
+}
+.device h1,p{
+  text-overflow: clip;
+  margin: unset;
+}
+.showInsertDevice{
+  display: flex;
+  flex-direction: column;
+}
+.showInsertDevice input{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px;
+  width: 400px;
+  height: 40px;
+ font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+
+.showInsertDevice h4{
+  margin: unset;
+}
+.showInsertDevice .submintButton{
+  border-radius: 20px;
+  background-color: rgb(238, 238, 151);
+}
+
+.showInsertDevice p{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+
+.showUpdateDevice{
+  display: flex;
+  flex-direction: column;
+}
+.showUpdateDevice input{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px;
+  width: 400px;
+  height: 40px;
+ font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+
+.showUpdateDevice h4{
+  margin: unset;
+}
+.showUpdateDevice .submintButton{
+  border-radius: 20px;
+  background-color: rgb(238, 238, 151);
+}
+
+.showUpdateDevice p{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+
+
+.fromEditDevice{
+  display: flex;
+  flex-direction: column;
+}
+.fromEditDevice input{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px;
+  width: 400px;
+  height: 40px;
+ font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+.fromEditDevice select{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px;
+  width: 200px;
+  height: 40px;
+ font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+.fromEditDevice h4{
+  margin: unset;
+}
+
+.fromEditDevice .submintButton{
+  border-radius: 20px;
+  background-color: rgb(238, 238, 151);
+}
+
+.fromEditDevice p{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.customDeviceButton{
+  width: 100px !important;
+
+}
+.hideCustomDevice{
+  display: none;
+}
+.showCustomDevice{
+  display: flex;
+  flex-direction: column;
+}
+.showCustomDevice h4{
+  margin: unset;
+}
+.custom{
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+}
+.imageDevice{
+  height: 50px;
+  width: 50px;
+}
+.alldevice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 8px 8px;
+  width: calc(calc(calc(100% / 12)* 10) - 76px);
+  overflow-x: scroll;
+  scrollbar-width: none;
+} 
+.alldevice h1{
+  margin: unset;
+}
+.showInsertDevice{
+  display: flex;
+}
+.hideInsertDevice{
+  display: none;
+}
+.showUpdateDevice{
+  display: flex;
+}
+.hideUpdateDevice{
+  display: none;
+}
